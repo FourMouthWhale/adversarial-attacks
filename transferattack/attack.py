@@ -5,7 +5,7 @@ import numpy as np
 from .utils import *
 
 class Attack(object):
-    def __init__(self, attack, model_name, epsilon, targeted, random_start, norm, loss, device=None):
+    def __init__(self, model_name, attack, epsilon, targeted, random_start, norm, loss, device=None):
         if norm not in ['l2', 'linfty']:
             raise Exception("Unsupported norm {} !".format(norm))
         self.attack = attack
