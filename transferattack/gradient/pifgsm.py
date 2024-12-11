@@ -4,8 +4,9 @@ from ..attack import Attack
 import torch.nn.functional as F
 
 class PIFGSM(Attack):
-    def __init__(self, model_name, attack='PI-FGSM', epsilon=16.0/255, alpha=1.6/255, epoch=10, decay=0, kern_size=3, gamma=16.0, 
-                 beta=10.0, targeted=False, random_start=False, norm='linfty', loss='crossentropy', device=None):
+    def __init__(self, model_name, attack='PI-FGSM', epsilon=16.0/255, alpha=1.6/255, epoch=10, decay=0, 
+                 kern_size=3, gamma=16.0, beta=10.0, targeted=False, random_start=False, 
+                 norm='linfty', loss='crossentropy', device=None):
         super().__init__(model_name, attack, epsilon, targeted, random_start, norm, loss, device)
         self.alpha = alpha
         self.epoch = epoch
