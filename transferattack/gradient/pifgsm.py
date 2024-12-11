@@ -1,3 +1,6 @@
+"""
+PI-FGSM: Projected Iterative Fast Gradient Sign Method
+"""
 import torch
 from ..utils import *
 from ..attack import Attack

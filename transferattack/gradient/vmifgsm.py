@@ -1,3 +1,6 @@
+"""
+VMI-FGSM: Variable - Momentum Iterative Fast Gradient Sign Method
+"""
 import torch
 
 from ..utils import *

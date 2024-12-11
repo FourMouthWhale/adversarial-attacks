@@ -1,3 +1,6 @@
+"""
+FGSM: Fast Gradient Sign Method
+"""
 from ..utils import *
 from ..attack import Attack
 

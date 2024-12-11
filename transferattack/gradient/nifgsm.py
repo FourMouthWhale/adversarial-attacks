@@ -1,3 +1,6 @@
+"""
+NI-FGSM: Nesterov Iterative Fast Gradient Sign Method
+"""
 from ..utils import *
 from .mifgsm import MIFGSM
 

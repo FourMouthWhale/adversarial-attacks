@@ -1,3 +1,6 @@
+"""
+EMI-FGSM: Enhanced Momentum Iterative Fast Gradient Sign Method
+"""
 import torch
 
 from ..utils import *

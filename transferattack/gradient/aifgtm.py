@@ -1,10 +1,13 @@
+"""
+AI-FGTM: Adam Iterative Fast Gradient Tanh Method
+"""
 import torch
 
 from ..utils import *
 from ..attack import Attack
 import math
 
-class AIFGSM(Attack):
+class AIFGTM(Attack):
     def __init__(self, model_name, attack='AI-FGSM', epsilon=16/255, alpha=1.6/255, epoch=10, decay=1., targeted=False, random_start=False, 
                  norm='linfty', loss='crossentropy', device=None, beta_1=0.99, beta_2=0.99, lam=1.3, mu_1=1.5, mu_2=1.9, **kwargs):
         super().__init__(model_name, attack, epsilon, targeted, random_start, norm, loss, device)
